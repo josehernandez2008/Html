@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: inter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: Contrail One;
+}
+
+button{
+    font-family: Contrail One;
+    font-size: 25px;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+}
+
+button:hover{
+    border: 2px solid black;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+a{
+    color: white;;
+    display: flex;
+}
+
+.header-EJM{
+    background-color: #15173D;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.logo-EJM{
+    display: flex;
+    width: 80px;
+    align-self: flex-end;
+}
+
+.footer-EJM{
+    background-color: #15173D;
+    padding: 25px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    padding: 8px;
+}
+
+.segundo-div-EJM{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    gap: 50px;
+}
+
+.redes-EJM{
+    padding: 15px;
+    display: flex;
+    gap: 35px;
+}
+
+.img-red-EJM{
+    width: 50px;
+}
+
+.div-logo-footer-EJM{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+/*------------------------------MAIN------------------------------*/
+
+.section-botones-EJM{
+    margin-top: 80px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.section-mundial-EJM{
+    background-color: black;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.div-logo-mundial-EJM{
+    padding-left: 35px;
+}
+
+.logo-mundial-EJM{
+    width: 250px;
+}
+
+.camisas-mundial-EJM{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.section-productos-EJM{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.div-producto-EJM{
+    margin-top: 50px;
+    margin-bottom: 50PX;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+}
+
+/*------------------------------caja producto------------------------------*/
+
+.caja-producto-EJM{
+    padding: 15px;
+    background-color: #EAEFEF;
+    color: black;
+    text-decoration: none;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: unset;
+    border: 1px solid #e4e4e4;
+}
+
+.caja-producto-EJM:hover{
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+.div-img-producto-EJM{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.img-producto-EJM{
+    display: flex;
+    max-width: 150px;
+    align-self: center;
+}
+
+.precio-EJM{
+    font-weight: 800;
+}
+
+.nombre-producto-EJM{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+@media (max-width: 380px){
+
+    *{
+        width: 100%;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-EJM{
+        gap: 25px;
+    }
+
+    .section-botones-EJM{
+        display: grid;
+        grid-template-columns: 140px 140px;
+        gap: 15px;
+        margin-top: 130px;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    .section-mundial-EJM{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .div-logo-mundial-EJM{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo-mundial-EJM{
+        width: 80px;
+    }
+
+    .section-mundial-EJM{
+        padding-bottom: 25px;
+        padding-top: 25px;
+        padding: 20px;
+    }
+
+    .camisas-mundial-EJM{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        justify-items: center;
+        margin-top: 25px;
+    }
+
+    .div-producto-EJM{
+        display: grid;
+        grid-template-columns: 120px 120px;
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .footer-EJM{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .div-logo-footer-EJM{
+        justify-content: flex-start;
+    }
+
+    .segundo-div-EJM{
+        flex-direction: row;
+        gap: 140px;
+    }
+
+    .redes-EJM{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .div-logo-footer-EJM{
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .caja-producto-EJM{
+        padding: 10px;
+        width: 110px;
+        gap: 5px;
+    }
+
+    .caja-producto-EJM:hover{
+        border: 1px solid black;
+        transform: scale(1.05);
+    }
+
+    .div-img-producto-EJM{
+        padding: 10px;
+    }
+
+    .img-producto-EJM{
+        max-width: 100px;
+    }
+
+    .precio-EJM{
+        font-weight: 800;
+    }
+}
